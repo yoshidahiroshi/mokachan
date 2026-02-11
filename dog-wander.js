@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       x += (dx / dist) * step;
       y += (dy / dist) * step;
 
-      const flip = dx < 0 ? -1 : 1;
+      const flip = dx < 0 ? 1 : -1;
       const bob = Math.sin(now / 140) * 3;
 
       img.style.transform =
@@ -66,3 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   requestAnimationFrame(tick);
 });
+
